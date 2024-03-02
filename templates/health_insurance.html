@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predict Health Insurance Premium </title>
+    </head>
+    <style>
+        form{
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <form action="/predict" method="post">
+            <h1>Predict Health insurance Premium Form Information</h1>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Name">
+            <br><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Enter Age">
+            <br><br>
+            <label for="gender">Select Gender</label>
+            <br>
+            <input type="radio" name="gender" value="1">male
+            <br>
+            <input type="radio" name="gender" value="0">Female
+            <br><br>
+            <label for="BMI">BMI</label>
+            <br>
+            <input type="number" name="BMI" placeholder="Enter Body MassIndex">
+            <br><br>
+            <label for="noofchildren">No. Of Children</label>
+            <br>
+            <input type="number" name="noofchildren" placeholder="Enter no. of children">
+            <br><br>
+            <label for="Are you Smoker">Are you Smoker</label>
+            <br>
+            <input type="radio" name="Are you Smoker" value="1">Y
+            <br>
+            <input type="radio" name="Are you Smoker" value="0">N
+            <br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </body>
+</html>
